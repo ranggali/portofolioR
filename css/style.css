@@ -1,0 +1,585 @@
+    :root {
+        --primary: #6d32a8;
+        --bg: #fff;
+        --bg-dua: #dddddf; 
+        --cr: #010101;
+        --bg-gr: rgba(255, 255, 255, 0.8);
+        --fw: 300;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg-gr);
+        color: var(--cr);
+        padding-top: 80px; /* Menghindari navbar menutupi konten */
+    }
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bg) !important;
+        padding: 1.4rem 7%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--cr);
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: 80px;
+    }
+
+    /* Home Section */
+    .portfolio-section {
+        margin-top: 20px; /* Tambahkan jarak dari navbar */
+        padding: 60px 0; /* Tambahkan padding atas dan bawah */
+    }
+    
+    .profile-image {
+        width: 100%;
+        max-width: 300px; /* Maksimal lebar gambar */
+        height: auto;
+        object-fit: cover; /* Menyesuaikan ukuran gambar */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut untuk gambar */
+        margin: 0 auto; /* Pusatkan gambar di layar kecil */
+    }
+
+    .bi {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-section .col-lg-5 {
+        margin-top: 20px; /* Tambahkan jarak default untuk kolom gambar */
+    }
+    
+    @media (max-width: 768px) { /* Untuk layar kecil (tablet dan lebih kecil) */
+        .portfolio-section .col-lg-7 {
+            margin-bottom: 20px; /* Tambahkan jarak bawah untuk teks */
+        }
+        .portfolio-section .col-lg-5 {
+            margin-top: 0; /* Atur ulang margin pada layar kecil */
+        }
+    }
+    
+    .btn-outline-primary {
+        margin-top: 20px; /* Tambahkan jarak atas pada tombol */
+    }
+    
+
+    /* About Me Section */
+    .about-me-section {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 60px 30px;
+        margin-top: 140px; /* Tambahkan jarak dengan bagian sebelumnya */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+    }
+    
+    .about-me-section h2 {
+        color: #333; /* Warna teks utama */
+        margin-bottom: 20px; /* Tambahkan jarak bawah */
+    }
+    .portfolio-section h2 {
+        color: black; /* Warna teks utama */
+        margin-bottom: 20px; /* Tambahkan jarak bawah */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        border-right: 3px solid white;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .photo-frame img {
+        width: 100%;
+        max-width: 300px; /* Batas maksimum lebar gambar */
+        height: auto; /* Pastikan gambar tetap proporsional */
+        object-fit: cover; /* Menyesuaikan gambar dengan frame */
+        border-radius: 50%; /* Membuat gambar menjadi bulat */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+    }
+    
+    .badge {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 5px 10px;
+        background-color: #dddddf;
+        margin-top: 50px;
+    }
+    
+
+    .btn-outline-primary {
+        border: 2px solid var(--primary); /* Ganti warna utama sesuai variabel Anda */
+        color: var(--primary);
+        font-weight: 500;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: var(--primary);
+        color: white;
+        transition: 0.3s;
+    }
+
+    .rounded-pill {
+        border-radius: 50px; /* Membuat tombol dengan sudut membulat */
+    }
+
+    /* Skill */
+
+    .skills-section {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan lembut */
+        padding: 60px 0; /* Berikan padding vertikal */
+    }
+    
+    .skills-section img {
+        max-width: 60px; /* Ukuran maksimum ikon */
+        height: auto; /* Pastikan gambar tetap proporsional */
+        margin: 0 auto; /* Pusatkan ikon */
+        display: block; /* Pastikan gambar berada di tengah */
+    }
+    
+    .skills-section p {
+        font-size: 0.9rem; /* Ukuran teks deskripsi */
+        color: #6c757d; /* Warna teks lembut */
+        margin-top: 8px; /* Tambahkan jarak atas */
+        text-align: center; /* Rata tengah teks */
+    }
+    
+
+    /* Experience */
+    .experience-section {
+        background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+        padding: 60px 0; /* Jarak vertikal */
+    }
+    
+    .experience-logo {
+        width: 60px; /* Ukuran logo */
+        height: 60px;
+        object-fit: contain; /* Menjaga proporsi logo */
+        border-radius: 8px; /* Membuat sudut melengkung */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+    }
+    
+    .card {
+        border-radius: 12px; /* Membuat sudut card melengkung */
+        padding: 15px;
+        background-color: #ffffff; /* Warna latar belakang card */
+        max-width: 800px; /* Batas lebar card */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card-body ul {
+        padding-left: 20px; /* Menambahkan jarak kiri untuk daftar */
+    }
+    
+    .card-body ul li {
+        font-size: 0.95rem; /* Ukuran teks deskripsi */
+        line-height: 1.6; /* Jarak antarbaris */
+    }
+    
+
+    /* StartWork */
+    .work-section {
+        background-color: #f8f9fa; /* Warna latar belakang */
+        padding: 60px 0; /* Jarak vertikal */
+    }
+    
+    .work-image img {
+        max-width: 100%; /* Gambar responsif */
+        border-radius: 10px; /* Sudut melengkung */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+    }
+    
+    .work-details h5 {
+        font-size: 1.5rem; /* Ukuran judul proyek */
+        color: #333; /* Warna teks */
+    }
+    
+    .work-details p {
+        font-size: 1rem; /* Ukuran teks deskripsi */
+        color: #6c757d; /* Warna teks */
+        line-height: 1.6; /* Jarak antarbaris */
+    }
+    
+    .tags .badge {
+        margin: 5px 5px 0 0; /* Jarak antar badge */
+        font-size: 0.9rem; /* Ukuran teks badge */
+        padding: 8px 12px; /* Padding dalam badge */
+        border-radius: 20px; /* Membuat badge melingkar */
+        background-color: #e9ecef; /* Warna latar badge */
+        color: #495057; /* Warna teks badge */
+    }
+    
+
+    .work-details a {
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
+
+    .work-details a:hover {
+        color: #333;
+    }
+
+    .work-image img {
+        max-width: 450px; /* Batas ukuran maksimum gambar */
+        width: 100%; /* Pastikan gambar responsif */
+        border-radius: 10px; /* Membuat sudut gambar melengkung */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan gambar */
+        margin: 0 auto; /* Pusatkan gambar */
+        display: block; /* Pastikan gambar berada di tengah */
+    }
+
+    /* StartContact */
+    .contact-section {
+        background-color: #f8f9fa; /* Warna latar belakang */
+        padding: 60px 0; /* Jarak vertikal */
+    }
+    
+    .contact-details {
+        margin-bottom: 20px; /* Jarak bawah antara informasi kontak */
+        color: #000; /* Warna teks */
+    }
+    
+    .contact-details .btn {
+        border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
+    }
+    
+    .social-icons a {
+        color: #6c757d; /* Warna ikon sosial default */
+        transition: color 0.3s; /* Efek transisi pada hover */
+    }
+    
+    .social-icons a:hover {
+        color: var(--cr); /* Warna ikon saat hover */
+    }
+    
+
+    /* StartFooter */
+    .footer {
+        background-color: #f8f9fa; /* Warna latar belakang */
+        color: #6c757d; /* Warna teks */
+        font-size: 0.9rem; /* Ukuran font */
+        border-top: 1px solid #e9ecef; /* Garis atas untuk pembatas */
+    }
+    
+    .footer a {
+        color: #495057; /* Warna link */
+        text-decoration: none; /* Menghapus underline pada link */
+    }
+    
+    .footer a:hover {
+        color: #000; /* Warna link saat hover */
+    }
+ 
+    /* start typewriter */
+.typewriter-text {
+font-size: 3rem;
+font-weight: bold;
+color: black;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+border-right: 3px solid white;
+white-space: nowrap;
+overflow: hidden;
+animation: typewriter-cycle 8s infinite;
+margin: 0;
+}
+
+@keyframes typewriter-cycle {
+0%, 10% { 
+    width: 0; 
+}
+45%, 55% { 
+    width: 100%; 
+}
+90%, 100% { 
+    width: 0; 
+}
+}
+
+@keyframes typing {
+from { 
+    width: 0; 
+}
+to { 
+    width: 100%; 
+}
+}
+
+@keyframes blink-caret {
+from, to { 
+    border-color: transparent; 
+}
+50% { 
+    border-color: white; 
+}
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+.typewriter-text {
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 480px) {
+.typewriter-text {
+    font-size: 1.5rem;
+}
+}
+/* end typewriter */
+
+/* START EDUCATION */
+.education-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.education-timeline {
+    position: relative;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 27px;
+    top: 60px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #0d6efd, #198754, #ffc107);
+    border-radius: 1px;
+}
+
+.education-item {
+    position: relative;
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.education-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.education-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.icon-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover .icon-circle {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.education-content .card {
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.education-item:nth-child(1) .education-content .card {
+    border-left-color: #0d6efd;
+}
+
+.education-item:nth-child(2) .education-content .card {
+    border-left-color: #198754;
+}
+
+.education-item:nth-child(3) .education-content .card {
+    border-left-color: #ffc107;
+}
+
+.education-content .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.cert-item {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.cert-item:hover {
+    background: white !important;
+    border-color: #dee2e6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.education-highlights {
+    border-top: 1px solid #e9ecef;
+    padding-top: 12px;
+}
+
+/* Animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-timeline::before {
+        left: 23px;
+    }
+    
+    .icon-circle {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .education-content .card {
+        margin-left: 0;
+    }
+}
+
+/* Badge Enhancement */
+.badge.bg-primary {
+    background: linear-gradient(45deg, #0d6efd, #6610f2) !important;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+/* END EDUCATION */
+
+/* START SERTIFIKAT */
+/* Hover effect untuk sertifikat */
+.clickable-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    filter: brightness(1.05);
+}
+
+/* Loading state */
+.modal-body img {
+    transition: opacity 0.3s ease;
+}
+
+.modal-body img.loading {
+    opacity: 0.3;
+}
+
+/* Enhanced modal styling */
+.modal-xl {
+    max-width: 50%;
+}
+
+.modal-content {
+    border: none;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-xl {
+        max-width: 30%;
+        margin: 1rem;
+    }
+    
+    #certificateImage {
+        max-height: 50vh;
+    }
+}
+
+/* Zoom effect saat modal terbuka */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal.show .modal-dialog {
+    animation: zoomIn 0.3s ease-out;
+}
+/* END SERTIFIKAT */
+
+/* Swiper custom styling */
+.container .swiper-container {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: grab;
+}
+
+.swiper-slide img:active {
+    cursor: grabbing;
+}
+
+/* Custom pagination dots */
+.swiper-pagination {
+    bottom: 15px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: black;
+    transform: scale(1.2);
+}
+
+/* Touch feedback */
+.swiper-container:active {
+    transform: scale(0.99);
+    transition: transform 0.1s ease;
+}
+/* end swiper */
