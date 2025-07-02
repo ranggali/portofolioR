@@ -496,7 +496,7 @@ from, to {
 
 /* Enhanced modal styling */
 .modal-xl {
-    max-width: 50%;
+    max-width: 40%;
 }
 
 .modal-content {
