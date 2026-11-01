@@ -3,244 +3,668 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | RAA</title>
+    <title>Rangga Ali Ardyansyah | Software Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Rangga Ali Ardyansyah, a software engineering student at Politeknik Negeri 1 Batam building web and mobile applications with PHP, Python, MySQL and Flutter.">
     <link rel="icon" href="assets/r.jpeg">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
-    <!-- Link Swiper CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Site stylesheet: keep this last so it overrides the libraries above -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="-25% 0px -65% 0px" tabindex="0">
+
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portofolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutme">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                </ul>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg site-nav" id="mainNav" aria-label="Main navigation">
+            <div class="shell nav-inner">
+                <a class="navbar-brand brand" href="#aboutme">
+                    <span class="brand-mark">RAA</span>
+                    <span class="brand-name">Rangga Ali Ardyansyah</span>
+                </a>
+                <button class="navbar-toggler nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="#aboutme">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Certificates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item nav-cta">
+                            <a class="btn-outline-site" href="https://github.com/ranggali" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- End Navbar -->
 
-    <!-- Start Home -->
-    <section class="portfolio-section" id="aboutme">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Column Text -->
-                <div class="col-lg-7 col-md-12">
-                    <h2 class="display-4 fw-bold">Hi,</h2><h1 class="typewriter-text">I'm Rangga Ali Ardyansyah</h1><br>
-                    <p class="lead text-muted">
-                       I am a passionate, detail-oriented software engineering student with a strong foundation in web and 
-                        mobile programming. I am an expert in Python, PHP, MySQL, and front-end and back-end development. 
-                        I am driven by the desire to create impactful software solutions and to continuously improve my software 
-                        engineering and project management skills. I am eager to contribute to innovative projects, and my 
-                        long-term goal is to lead a software development team in delivering high-quality solutions that make a 
-                        difference.
+    <main>
+        <!-- Start Home -->
+        <section class="hero" id="aboutme">
+            <div class="shell hero-grid">
+                <div class="hero-copy">
+                    <h1 class="hero-name">Rangga Ali Ardyansyah</h1>
+                    <p class="hero-role">Software engineering student building web and mobile applications.</p>
+                    <p class="hero-summary">
+                        Graduate of the Software Engineering program (D4 in Software Engineering, Polytechnic State of Batam) 
+                        with expertise in web development (HTML, CSS, PHP, MySQL) and IoT (ESP32, Arduino IDE). 
+                        Experienced in building responsive websites, integrating databases, and providing support for application systems. 
+                        Possesses strong problem-solving, teamwork, and communication skills. 
+                        Currently seeking opportunities to grow as an IT professional in the fields of systems analysis, application support, and innovative technology solutions.
                     </p>
-                    <div class="mt-4">
-                        <span class="me-3">Follow Me</span>
-                        <a href="https://www.instagram.com/ranggaalr_/" target="_blank" class="me-3 text-dark"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/rangga-ali-ardyansyah/" target="_blank" class="me-3 text-dark"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/ranggali" target="_blank" class="me-3 text-dark"><i class="bi bi-github"></i></a>
+                    <div class="hero-actions">
+                        <a class="btn-solid" href="#project">View projects</a>
+                        <a class="btn-outline-site" href="https://github.com/ranggali" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                        </a>
+                        <a class="btn-outline-site" href="https://www.linkedin.com/in/rangga-ali-ardyansyah/" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn
+                        </a>
+                        <!-- Uncomment once the CV file is ready
+                        <a class="btn-outline-site" href="assets/CV-Rangga.pdf" target="_blank" download>
+                            <i class="bi bi-download" aria-hidden="true"></i> Download CV
+                        </a>
+                        -->
                     </div>
-                    <!--<div class="mt-3">
-                        <a href="assets/CV-Rangga.pdf" target="_blank" class="btn btn-outline-primary rounded-pill px-4 py-2" download>Download CV</a>
-                    </div>-->
+                </div>
+
+                <figure class="code-card" aria-label="Profile summary written as a JavaScript object">
+                    <div class="code-bar">
+                        <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="code-file">profile.js</span>
+                    </div>
+                    <pre class="code-body"><code><span class="ln" style="--i:0"><span class="tk-kw">const</span> <span class="tk-var">developer</span> <span class="tk-pun">=</span> <span class="tk-pun">{</span></span><span class="ln" style="--i:1">  <span class="tk-key">name</span><span class="tk-pun">:</span> <span class="tk-str">"Rangga Ali Ardyansyah"</span><span class="tk-pun">,</span></span><span class="ln" style="--i:2">  <span class="tk-key">role</span><span class="tk-pun">:</span> <span class="tk-str">"Software Engineering Student"</span><span class="tk-pun">,</span></span><span class="ln" style="--i:3">  <span class="tk-key">school</span><span class="tk-pun">:</span> <span class="tk-str">"Politeknik Negeri 1 Batam"</span><span class="tk-pun">,</span></span><span class="ln" style="--i:4">  <span class="tk-key">stack</span><span class="tk-pun">:</span> <span class="tk-pun">[</span><span class="tk-str">"PHP"</span><span class="tk-pun">,</span> <span class="tk-str">"Python"</span><span class="tk-pun">,</span> <span class="tk-str">"MySQL"</span><span class="tk-pun">,</span> <span class="tk-str">"Flutter"</span><span class="tk-pun">],</span></span><span class="ln" style="--i:5">  <span class="tk-key">focus</span><span class="tk-pun">:</span> <span class="tk-str">"Web &amp; mobile applications"</span><span class="tk-pun">,</span></span><span class="ln" style="--i:6">  <span class="tk-key">award</span><span class="tk-pun">:</span> <span class="tk-str">"Runner-up 3, PBL EXPO 2024"</span><span class="tk-pun">,</span></span><span class="ln" style="--i:7">  <span class="tk-key">goal</span><span class="tk-pun">:</span> <span class="tk-str">"Lead a software development team"</span><span class="tk-pun">,</span></span><span class="ln" style="--i:8"><span class="tk-pun">};</span></span></code></pre>
+                </figure>
+            </div>
+        </section>
+        <!-- End Home -->
+
+        <!-- Start Skills -->
+        <section class="section section-alt" id="skills">
+            <div class="shell">
+                <div class="section-head">
+                    <h2>Technical skills</h2>
+                    <p>The languages and tools I used across the projects below.</p>
+                </div>
+                <dl class="skill-list">
+                    <div class="skill-row">
+                        <dt>Backend and database</dt>
+                        <dd>
+                            <ul class="chips">
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>SQL</li>
+                                <li>C++</li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div class="skill-row">
+                        <dt>Frontend</dt>
+                        <dd>
+                            <ul class="chips">
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div class="skill-row">
+                        <dt>Mobile and IoT</dt>
+                        <dd>
+                            <ul class="chips">
+                                <li>Flutter</li>
+                                <li>Dart</li>
+                                <li>IoT</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div class="skill-row">
+                        <dt>Ways of working</dt>
+                        <dd>
+                            <ul class="chips">
+                                <li>Software engineering</li>
+                                <li>Project management</li>
+                                <li>Project Based Learning (PBL)</li>
+                            </ul>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+        <!-- End Skills -->
+
+        <!-- Start Work Experience -->
+        <section class="section" id="work">
+            <div class="shell">
+                <div class="section-head">
+                    <h2>Work experience</h2>
+                    <p>Where I have applied my skills in real teams and real products.</p>
+                </div>
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-head">
+                            <h3 class="timeline-title">Information Technology Intern</h3>
+                            <span class="timeline-period">August 2025 – April 2026</span>
+                        </div>
+                        <p class="timeline-place">PT. PATLITE INDONESIA, BATAM (On-site)</p>
+                        <p class="timeline-text">
+                            Completed an 8-month IT Support and IT Operations internship at PT Patlite Indonesia, 
+                            managing hardware/software infrastructure, troubleshooting network issues, 
+                            and implementing system documentation and technical projects.
+                        </p>
+                        <ul class="timeline-list">
+                            <li>Managed the installation, configuration, and troubleshooting of IT hardware, laptops, workstations, printers, and multi-display setups across various company departments.</li>
+                            <li>Maintained and optimized network infrastructure, including LAN cabling, access points, switch configuration, and CCTV maintenance.</li>
+                            <li>Executed system administration tasks such as OS upgrades (Windows 11), SSD cloning, data backups, password recovery, and VPN configurations.</li>
+                            <li>Conducted IT asset inventory management, device mapping, and system documentation using draw.io.</li>
+                            <li>Developed an IoT-based automated AC control system using ESP32 microcontrollers, ArduinoIDE, and BME280 sensors as a core technical project.</li>
+                            <li>Created structured Work Instructions (WI), flowcharts, and technical documentation to support operational standardization.</li>
+                            <li>Applied operational excellence concepts, including Lean Manufacturing, Kaizen, and 7QC Tools, to enhance troubleshooting workflows and problem-solving.</li>
+                        </ul>
+                        <ul class="chips chips-mono">
+                            <li>IT Support</li>
+                            <li>Networking (LAN/CCTV)</li>
+                            <li>Windows Administration</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- End Work Experience -->
+
+        <!-- Start Projects -->
+        <section id="project" class="section section-alt">
+            <div class="shell">
+                <div class="section-head">
+                    <h2>Highlighted projects</h2>
+                    <p>A list of selected projects that I have designed and built, either on my own or as part of a team.</p>
+                </div>
+
+                <div class="projects">
+
+                    <!-- TA 1 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <div class="screen">
+                                <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                                <div id="projectSlider" class="swiper swiper-container project-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="assets/project/accontroller1.png" alt="Accontroller Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/accontroller2.png" alt="Accontroller Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/accontroller3.png" alt="Accontroller Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/accontroller4.png" alt="Accontroller Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/accontroller5.png" alt="Accontroller Project" loading="lazy"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">AC IT CONTROLLER</h3>
+                            <p class="project-subtitle">An IoT-based web application for automated and remote air conditioner temperature scheduling</p>
+                            <p class="project-desc">
+                                AC IT Controller is an IoT-based web platform designed to remotely monitor and control air conditioning (AC) systems. 
+                                It enables automatic temperature scheduling and real-time monitoring of environmental conditions. Built as a final project at Polytechnic State of Batam.
+                            </p>
+                            <ul class="chips chips-mono">
+                                <li>PHP</li>
+                                <li>JavaScript</li>
+                                <li>Arduino IDE</li>
+                                <li>Microcontroller</li>
+                                <li>IoT</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="text-link" href="https://www.fixquick.wuaze.com" target="_blank" rel="noopener noreferrer">
+                                    <!-- <i class="bi bi-globe2" aria-hidden="true"></i> Live demo -->
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 1 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <div class="screen">
+                                <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                                <div id="projectSlider" class="swiper swiper-container project-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="assets/project/fixquick1.png" alt="Fixquick Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/fixquick2.png" alt="Fixquick Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/fixquick3.jpeg" alt="Fixquick Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/fixquick4.png" alt="Fixquick Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/fixquick5.png" alt="Fixquick Project" loading="lazy"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Fixquick</h3>
+                            <p class="project-subtitle">Multi-residence maintenance and service booking platform</p>
+                            <p class="project-desc">
+                                FixQuick is a digital platform for booking repair services and household needs in residential
+                                neighborhoods. Users can access services according to their roles. The system makes it easy to
+                                submit, monitor, and manage services in real time. Applications developed through Project-Based Learning (PBL) 
+                                at Polytechnic State of Batam.
+                            </p>
+                            <ul class="chips chips-mono">
+                                <li>PHP</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="text-link" href="https://www.fixquick.wuaze.com" target="_blank" rel="noopener noreferrer">
+                                    <!-- <i class="bi bi-globe2" aria-hidden="true"></i> Live demo -->
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <div class="screen">
+                                <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                                <div id="projectSlider2" class="swiper swiper-container project-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="assets/project/sos1.png" alt="Smart RT Panic Button Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/sos2.png" alt="Smart RT Panic Button Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/sos3.png" alt="Smart RT Panic Button Project" loading="lazy"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Smart RT Panic Button</h3>
+                            <p class="project-subtitle">IoT-based security system for local residents</p>
+                            <p class="project-desc">
+                                If an emergency occurs, residents can press the SOS button in the app to turn on the
+                                loudspeakers in the area. The app has been used in several regions for residential security
+                                and offers a new approach to neighborhood safety. Applications developed through Project-Based Learning (PBL) 
+                                at Polytechnic State of Batam.
+                            </p>
+                            <ul class="chips chips-mono">
+                                <li>PHP</li>
+                                <li>IoT</li>
+                                <li>Firebase</li>
+                                <li>MySQL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="text-link" href="https://github.com/ranggali/Smart-RT-Panic-Button" target="_blank" rel="noopener noreferrer">
+                                    <!-- <i class="bi bi-github" aria-hidden="true"></i> Source code -->
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <div class="screen">
+                                <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                                <div id="projectSlider3" class="swiper swiper-container project-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="assets/project/alpu1.png" alt="ALPU Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/alpu2.png" alt="ALPU Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/alpu3.png" alt="ALPU Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/alpu4.png" alt="ALPU Project" loading="lazy"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">ALPU</h3>
+                            <p class="project-subtitle">Mobile app for general patient access to hospital services</p>
+                            <p class="project-desc">
+                                The ALPU (Akses Layanan Pasien Umum) mobile application was developed to overcome the obstacles
+                                general patients face when accessing health services at the hospital. Manual registration is
+                                often time-consuming and disrupts patients’ schedules, so the app gives patients easy access to
+                                and interaction with health services. Applications developed through Project-Based Learning (PBL) 
+                                at Polytechnic State of Batam.
+                            </p>
+                            <ul class="chips chips-mono">
+                                <li>Flutter</li>
+                                <li>Dart</li>
+                                <li>MySQL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="text-link" href="https://pbl.polibatam.ac.id/pamerin/detail.php?title=aplikasi-mobile-kesehatan&amp;id=Nzgz&amp;ta=Mw==&amp;id_tim=MTQ2Mg==" target="_blank" rel="noopener noreferrer">
+                                    <!-- <i class="bi bi-globe2" aria-hidden="true"></i> Project page -->
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <div class="screen">
+                                <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                                <div id="projectSlider4" class="swiper swiper-container project-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="assets/project/talenthub1.png" alt="Talenthub.id Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/talenthub2.png" alt="Talenthub.id Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/talenthub3.png" alt="Talenthub.id Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/talenthub4.png" alt="Talenthub.id Project" loading="lazy"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Talenthub.id</h3>
+                            <p class="project-subtitle">Talent pool platform connecting students and industry</p>
+                            <p class="project-desc">
+                                Talenthub showcases students’ talents and qualifications at Polibatam, including internship
+                                opportunities. It connects Polibatam students with industry and meets the needs of both sides. 
+                                Applications developed through Project-Based Learning (PBL) at Polytechnic State of Batam.
+                            </p>
+                            <ul class="chips chips-mono">
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="text-link" href="https://pbl.polibatam.ac.id/pamerin/detail.php?title=aplikasi-penjaringan-talent-pool&amp;id=NTk2&amp;ta=Mg==&amp;id_tim=Mzg2" target="_blank" rel="noopener noreferrer">
+                                    <!-- <i class="bi bi-globe2" aria-hidden="true"></i> Project page -->
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project">
+                        <div class="project-media">
+                            <div class="screen">
+                                <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                                <div id="projectSlider5" class="swiper swiper-container project-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="assets/project/loan1.jpeg" alt="Room and laboratory loan application Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/loan2.jpeg" alt="Room and laboratory loan application Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/loan3.jpeg" alt="Room and laboratory loan application Project" loading="lazy"></div>
+                                        <div class="swiper-slide"><img src="assets/project/loan4.jpeg" alt="Room and laboratory loan application Project" loading="lazy"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Room and Laboratory Loan Application</h3>
+                            <p class="project-subtitle">Campus room and lab booking for students and faculty</p>
+                            <p class="project-desc">
+                                A website for borrowing rooms or laboratories for students and faculty at Politeknik Negeri 1
+                                Batam. The platform connects users and administrators to process room loans. 
+                                Applications developed through Project-Based Learning (PBL) at Polytechnic State of Batam.
+                            </p>
+                            <ul class="chips chips-mono">
+                                <li>PHP</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                                <li>JavaScript</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="text-link" href="https://github.com/ranggali/Aplikasi-Peminjaman-Ruangan-dan-Lab-Kampus" target="_blank" rel="noopener noreferrer">
+                                    <!-- <i class="bi bi-github" aria-hidden="true"></i> Source code -->
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Home -->
+        </section>
+        <!-- End Projects -->
 
-    <!-- Start Experience -->
-    <section id="experience" class="experience-section py-5">
-        <div class="container">
-            <div class="text-center mb-4">
-                <span class="badge bg-light text-muted mb-2">Experience</span>
-                <h2 class="mt-2">Experience</h2>
-            </div>
-            <div class="row">
-                <!-- Sertifikat 1: Peserta -->
-                <div class="col-12 mb-4">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body d-flex align-items-center">
-                            <!-- Logo - Clickable -->
-                            <img src="assets/pengalaman/peserta_1000startup.png" 
-                                alt="1000StartUp Peserta Certificate" 
-                                class="experience-logo me-4 clickable-image" 
-                                data-image-src="assets/pengalaman/peserta_1000startup.png"
-                                data-image-title="Certificate - Peserta #Hack4ID 1000StartUp"
-                                data-image-alt="Certificate Peserta #Hack4ID 1000StartUp"
-                                style="cursor: pointer; transition: transform 0.2s ease; border-radius: 8px;">
-                            <!-- Details -->
-                            <div class="w-100">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="fw-bold mb-1">Participation #Hack4ID 1000StartUp</h5>
-                                    <span class="text-muted">22 Aug - 23 Aug 2023</span>
-                                </div>
-                                <ul class="mb-0 text-muted">
-                                    <li>PESERTA #HACK4ID KEPRI - POLIBATAM X LINTASARTA, 22 - 23 AGUSTUS 2023</li>
-                                </ul>
+        <!-- Start Experience -->
+        <section id="experience" class="section">
+            <div class="shell">
+                <div class="section-head">
+                    <h2>Certificates and achievements</h2>
+                    <p>A collection of verified certifications, professional training, and competitive milestones that reflect my continuous learning and technical growth.</p>
+                </div>
+
+                <!--
+                    To add a certificate: copy one <li class="cert-card"> block into the
+                    matching tab panel below and change the image path and text.
+                -->
+                <ul class="nav cert-tabs" id="certTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab-competition" data-bs-toggle="tab" data-bs-target="#panel-competition" type="button" role="tab" aria-controls="panel-competition" aria-selected="true">Competitions</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-webinar" data-bs-toggle="tab" data-bs-target="#panel-webinar" type="button" role="tab" aria-controls="panel-webinar" aria-selected="false">Webinars</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-program" data-bs-toggle="tab" data-bs-target="#panel-program" type="button" role="tab" aria-controls="panel-program" aria-selected="false">Programs</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="panel-competition" role="tabpanel" aria-labelledby="tab-competition" tabindex="0">
+                        <ul class="cert-grid">
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/JuaraPBLEXPO.png"
+                                     alt="Runner-up 3 PBL EXPO 2024 certificate"
+                                     class="cert-card-img clickable-image"
+                                     data-image-src="assets/pengalaman/JuaraPBLEXPO.png"
+                                     data-image-title="Certificate - Runner-up 3 PBL EXPO 2024"
+                                     data-image-alt="Certificate Runner-up 3 PBL EXPO 2024"
+                                     loading="lazy">
                             </div>
-                        </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title"><i class="bi bi-award-fill" aria-hidden="true"></i> Runner-up 3, PBL EXPO Polibatam 2024</h4>
+                                <p class="cert-card-desc">Awarded at PBL EXPO, Politeknik Negeri Batam.</p>
+                                <span class="cert-card-date">5–7 Aug 2024</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/pesertaPBLEXPO.png"
+                                     alt="Participant PBL EXPO 2024 certificate"
+                                     class="cert-card-img clickable-image"
+                                     data-image-src="assets/pengalaman/pesertaPBLEXPO.png"
+                                     data-image-title="Certificate - Participant PBL EXPO 2024"
+                                     data-image-alt="Certificate participant PBL EXPO 2024"
+                                     loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Participant, PBL EXPO Polibatam 2024</h4>
+                                <p class="cert-card-desc">Participant in PBL EXPO, Politeknik Negeri Batam.</p>
+                                <span class="cert-card-date">5–7 Aug 2024</span>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="panel-webinar" role="tabpanel" aria-labelledby="tab-webinar" tabindex="0">
+                        <ul class="cert-grid">
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/jagoqa.png"
+                                     alt="#Hack4ID 1000StartUp participant certificate"
+                                     class="cert-card-img clickable-image"
+                                     data-image-src="assets/pengalaman/jagoqa.png"
+                                     data-image-title="Certificate - Peserta #Hack4ID 1000StartUp"
+                                     data-image-alt="Certificate Peserta #Hack4ID 1000StartUp"
+                                     loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Docker Introduction</h4>
+                                <p class="cert-card-desc">Jago QA Institute • Credential ID: DEVOPS-00020</p>
+                                <span class="cert-card-date">May 2024</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/roadshow_1000startup.png"
+                                     alt="#Hack4ID 1000StartUp roadshow certificate"
+                                     class="cert-card-img clickable-image"
+                                     data-image-src="assets/pengalaman/roadshow_1000startup.png"
+                                     data-image-title="Certificate - Roadshow #Hack4ID 1000StartUp"
+                                     data-image-alt="Certificate Roadshow #Hack4ID 1000StartUp"
+                                     loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Roadshow and kickoff, #Hack4ID 1000StartUp</h4>
+                                <p class="cert-card-desc">A collaboration between Polibatam and Lintasarta.</p>
+                                <span class="cert-card-date">14 Aug 2023</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/peserta_1000startup.png"
+                                     alt="#Hack4ID 1000StartUp participant certificate"
+                                     class="cert-card-img clickable-image"
+                                     data-image-src="assets/pengalaman/peserta_1000startup.png"
+                                     data-image-title="Certificate - Peserta #Hack4ID 1000StartUp"
+                                     data-image-alt="Certificate Peserta #Hack4ID 1000StartUp"
+                                     loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Participant, #Hack4ID 1000StartUp</h4>
+                                <p class="cert-card-desc">#Hack4ID Kepri, a collaboration between Polibatam and Lintasarta.</p>
+                                <span class="cert-card-date">22–23 Aug 2023</span>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="panel-program" role="tabpanel" aria-labelledby="tab-program" tabindex="0">
+                        <ul class="cert-grid">
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/fullstackdev.png"
+                                     alt="Logical Operations Certificate, 2026"
+                                     class="cert-card-img clickable-image"
+                                     data-image-src="assets/pengalaman/fullstackdev.png"
+                                     data-image-title="Certificate - Fullstack Developer Associate, 2026"
+                                     data-image-alt="Certificate Fullstack Developer Associate, 2026"
+                                     loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Fullstack Developer Associate</h4>
+                                <p class="cert-card-desc">Certificate of completion.</p>
+                                <span class="cert-card-date">2026</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/fixquick.png"
+                                     alt="Project Based Learning certificate, 2024/2025 even semester"
+                                     class="cert-card-img clickable-image"
+                                     data-image-src="assets/pengalaman/fixquick.png"
+                                     data-image-title="Certificate - Project Based Learning (PBL), 2024/2025 Even Semester"
+                                     data-image-alt="Certificate Project Based Learning (PBL), 2024/2025 even semester"
+                                     loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Project Based Learning (PBL)</h4>
+                                <p class="cert-card-desc">Certificate of completion.</p>
+                                <span class="cert-card-date">2024/2025 even semester</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/kmipn.png"
+                                     alt="Project Based Learning certificate, 2024/2025 odd semester"
+                                     class="cert-card-img clickable-image"
+                                     data-image-src="assets/pengalaman/kmipn.png"
+                                     data-image-title="Certificate - Project Based Learning (PBL), 2024/2025 Odd Semester"
+                                     data-image-alt="Certificate Project Based Learning (PBL), 2024/2025 odd semester"
+                                     loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Project Based Learning (PBL)</h4>
+                                <p class="cert-card-desc">Certificate of completion.</p>
+                                <span class="cert-card-date">2024/2025 odd semester</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/kaizen.png"
+                                    alt="Kaizen certificate"
+                                    class="cert-card-img clickable-image"
+                                    data-image-src="assets/pengalaman/kaizen.png"
+                                    data-image-title="Certificate - Kaizen"
+                                    data-image-alt="Certificate Kaizen"
+                                    loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Kaizen</h4>
+                                <p class="cert-card-desc">Professional training and certification on continuous process improvement methodologies.</p>
+                                <span class="cert-card-date">PT. Patlite Indonesia</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/lean_manufacturing.png"
+                                    alt="Lean Manufacturing certificate"
+                                    class="cert-card-img clickable-image"
+                                    data-image-src="assets/pengalaman/lean_manufacturing.png"
+                                    data-image-title="Certificate - Lean Manufacturing"
+                                    data-image-alt="Certificate Lean Manufacturing"
+                                    loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">Lean Manufacturing</h4>
+                                <p class="cert-card-desc">Training on operational efficiency, waste reduction, and workflow optimization.</p>
+                                <span class="cert-card-date">PT. Patlite Indonesia</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <div class="cert-card-media">
+                                <img src="assets/pengalaman/7qc_tools.png"
+                                    alt="7QC Tools certificate"
+                                    class="cert-card-img clickable-image"
+                                    data-image-src="assets/pengalaman/7qc_tools.png"
+                                    data-image-title="Certificate - 7QC Tools"
+                                    data-image-alt="Certificate 7QC Tools"
+                                    loading="lazy">
+                            </div>
+                            <div class="cert-card-body">
+                                <h4 class="cert-card-title">7QC Tools</h4>
+                                <p class="cert-card-desc">Training on Seven Basic Quality Control tools for structured problem solving and data analysis.</p>
+                                <span class="cert-card-date">PT. Patlite Indonesia</span>
+                            </div>
+                        </li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Sertifikat 2: Roadshow -->
-                <div class="col-12 mb-4">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body d-flex align-items-center">
-                            <!-- Logo - Clickable -->
-                            <img src="assets/pengalaman/roadshow_1000startup.png" 
-                                alt="1000StartUp Roadshow Certificate" 
-                                class="experience-logo me-4 clickable-image" 
-                                data-image-src="assets/pengalaman/roadshow_1000startup.png"
-                                data-image-title="Certificate - Roadshow #Hack4ID 1000StartUp"
-                                data-image-alt="Certificate Roadshow #Hack4ID 1000StartUp"
-                                style="cursor: pointer; transition: transform 0.2s ease; border-radius: 8px;">
-                            <!-- Details -->
-                            <div class="w-100">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="fw-bold mb-1">Participation #Hack4ID 1000StartUp</h5>
-                                    <span class="text-muted">14 Aug 2023</span>
-                                </div>
-                                <ul class="mb-0 text-muted">
-                                    <li>ROADSHOW & KICKOFF #Hack4ID POLTEK BATAM X LINTASARTA</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sertifikat 3: PBL FixQuick -->
-                <div class="col-12 mb-4">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body d-flex align-items-center">
-                            <!-- Logo - Clickable -->
-                            <img src="assets/pengalaman/fixquick.png" 
-                                alt="1000StartUp Roadshow Certificate" 
-                                class="experience-logo me-4 clickable-image" 
-                                data-image-src="assets/pengalaman/fixquick.png"
-                                data-image-title="Certificate - Project Based Learning (PBL)"
-                                data-image-alt="Certificate Project Based Learning (PBL)"
-                                style="cursor: pointer; transition: transform 0.2s ease; border-radius: 8px;">
-                            <!-- Details -->
-                            <div class="w-100">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="fw-bold mb-1">Project Based Learning (PBL)</h5>
-                                    <span class="text-muted">TA 2024/2025 Genap</span>
-                                </div>
-                                <ul class="mb-0 text-muted">
-                                    <li>Certificate of Completion</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sertifikat 4: KMIPN PBL FixQuick -->
-                <div class="col-12 mb-4">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body d-flex align-items-center">
-                            <!-- Logo - Clickable -->
-                            <img src="assets/pengalaman/kmipn.png" 
-                                alt="1000StartUp Roadshow Certificate" 
-                                class="experience-logo me-4 clickable-image" 
-                                data-image-src="assets/pengalaman/kmipn.png"
-                                data-image-title="Certificate - Project Based Learning (PBL)"
-                                data-image-alt="Certificate Project Based Learning (PBL)"
-                                style="cursor: pointer; transition: transform 0.2s ease; border-radius: 8px;">
-                            <!-- Details -->
-                            <div class="w-100">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="fw-bold mb-1">Project Based Learning (PBL)<h5>
-                                    <span class="text-muted">TA 2024/2025 Ganjil</span>
-                                </div>
-                                <ul class="mb-0 text-muted">
-                                    <li>Certificate of Completion</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sertifikat 5: Peserta PBL EXPO 2024 -->
-                <div class="col-12 mb-4">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body d-flex align-items-center">
-                            <!-- Logo - Clickable -->
-                            <img src="assets/pengalaman/pesertaPBLEXPO.png" 
-                                alt="Peserta PBL EXPO 2024 Certificate" 
-                                class="experience-logo me-4 clickable-image" 
-                                data-image-src="assets/pengalaman/pesertaPBLEXPO.png"
-                                data-image-title="Certificate - Participant PBL EXPO 2024"
-                                data-image-alt="Certificate participant PBL EXPO 2024"
-                                style="cursor: pointer; transition: transform 0.2s ease; border-radius: 8px;">
-                            <!-- Details -->
-                            <div class="w-100">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="fw-bold mb-1">Participant PBL EXPO Polibatam 2024</h5>
-                                    <span class="text-muted">05-07 Aug 2024</span>
-                                </div>
-                                <ul class="mb-0 text-muted">
-                                    <li>Participant PBL EXPO Politeknik Negeri Batam</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sertifikat 6: Juara PBL EXPO 2024 -->
-                <div class="col-12 mb-4">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body d-flex align-items-center">
-                            <!-- Logo - Clickable -->
-                            <img src="assets/pengalaman/JuaraPBLEXPO.png" 
-                                alt="Peserta PBL EXPO 2024 Certificate" 
-                                class="experience-logo me-4 clickable-image" 
-                                data-image-src="assets/pengalaman/JuaraPBLEXPO.png"
-                                data-image-title="Certificate - Runner-up 3 PBL EXPO 2024"
-                                data-image-alt="Certificate Runner-up 3 PBL EXPO 2024"
-                                style="cursor: pointer; transition: transform 0.2s ease; border-radius: 8px;">
-                            <!-- Details -->
-                            <div class="w-100">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="fw-bold mb-1">Runner-up PBL EXPO Polibatam 2024</h5>
-                                    <span class="text-muted">05-07 Aug 2024</span>
-                                </div>
-                                <ul class="mb-0 text-muted">
-                                    <li>Runner-up3 PBL EXPO Politeknik Negeri Batam</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SATU MODAL UNIVERSAL UNTUK KEDUA SERTIFIKAT -->
+                <!-- One universal modal for every certificate -->
                 <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl modal-dialog-centered">
                         <div class="modal-content">
-                            <div class="modal-header border-0 bg-light">
+                            <div class="modal-header">
                                 <h5 class="modal-title fw-bold" id="certificateModalLabel">
                                     <i class="bi bi-award-fill text-warning me-2"></i>
                                     Certificate View
@@ -248,319 +672,103 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body text-center p-4">
-                                <!-- Loading Spinner -->
+                                <!-- Loading spinner -->
                                 <div id="imageLoader" class="d-none">
                                     <div class="spinner-border text-primary" role="status">
                                         <span class="visually-hidden">Loading...</span>
                                     </div>
                                     <p class="mt-2 text-muted">Loading certificate...</p>
                                 </div>
-                                
-                                <!-- Certificate Image -->
-                                <img id="certificateImage" 
-                                    src="" 
-                                    alt="" 
-                                    class="img-fluid rounded shadow-lg"
-                                    style="max-height: 75vh; width: auto; transition: opacity 0.3s ease;">
+
+                                <!-- Certificate image -->
+                                <img id="certificateImage" src="" alt="" class="img-fluid rounded shadow-lg">
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Experience -->
+
+        <!-- Start Education -->
+        <section id="education" class="section section-alt">
+            <div class="shell">
+                <div class="section-head">
+                    <h2>Educational background</h2>
+                    <p>My academic journey in technology and software development.</p>
+                </div>
+
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-head">
+                            <h3 class="timeline-title">Bachelor of Science in Software Engineering</h3>
+                            <span class="timeline-period">2022 – 2026</span>
+                        </div>
+                        <p class="timeline-place">Polytechnic State of Batam</p>
+                        <p class="timeline-text">
+                            Focused on software engineering, data structures, algorithms, and web development.
+                            Maintained excellent academic standing while working on various programming projects.
+                        </p>
+                        <p class="timeline-note">
+                            <strong>Key subjects:</strong> Data Structures, Algorithms, Web Development, Database Systems,
+                            Software Engineering, Object-Oriented Programming
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+                        <div class="timeline-head">
+                            <h3 class="timeline-title">High School Diploma</h3>
+                            <span class="timeline-period">2019 – 2022</span>
+                        </div>
+                        <p class="timeline-place">Madrasah Aliyah Negeri 1 Batam</p>
+                        <p class="timeline-text">
+                            Science/Technology track with a focus on mathematics and computer science.
+                            Started my programming journey and developed a passion for technology.
+                        </p>
+                        <p class="timeline-note">
+                            <strong>Achievements:</strong> Class president for three terms, winner of the inter-class COC
+                            competition, and memorized Juz 29 and 30 of the Quran.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- End Education -->
+        <!-- Image viewer for project screenshots (used by js/swiper.js) -->
+        <div class="modal fade" id="imageViewerModal" tabindex="-1" aria-labelledby="imageViewerTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="imageViewerTitle">Screenshot</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center p-3">
+                        <img id="imageViewerImage" src="" alt="" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Experience -->
+    </main>
 
-    <!-- StartWork -->
-    <section id="project" class="work-section py-5">
-        <div class="container">
-            <div class="text-center mb-4">
-                <span class="badge bg-light text-muted">Project</span>
-                <h2 class=" mt-2">Highlighted Projects</h2><br>
+    <!-- Start Footer -->
+    <footer class="site-footer">
+        <div class="shell footer-grid">
+            <div>
+                <h2 class="footer-title">Let’s connect</h2>
+                <p class="footer-text">The best way to reach me is through LinkedIn or GitHub.</p>
             </div>
-            <!-- Project 1 -->
-            <div class="row align-items-center mb-5">
-                <!-- Image -->
-                <!-- Image Slider -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="work-image position-relative">
-                        <!-- Slider Container -->
-                        <div id="projectSlider" class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="assets/project/fixquick1.png" alt="Project 1 - Image 1" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/fixquick2.png" alt="Project 1 - Image 2" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/fixquick3.jpeg" style="max-width: 30%; max-height: 30%;" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/fixquick4.png" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/fixquick5.png" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                            </div>
-                            
-                            <!-- Pagination dots -->
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Description -->
-                <div class="col-lg-6">
-                    <h5 class="fw-bold mb-2">Fixquick: Multi-Residence Maintenance And Service Booking Platform (PBL)<a href="https://www.fixquick.wuaze.com" target="_blank" rel="noopener noreferrer" style="color: #009688; text-decoration: none;">[DEMO]</a></h5>
-                    <p class="text-muted">
-                        FixQuick is a digital platform for booking repair services and household needs in residential neighborhoods. Users can access services according to their roles. The system makes it easy to submit, monitor, and manage services in real-time.
-                    </p>
-                    <div class="tags mb-3">
-                        <span class="badge bg-light text-dark">PHP Native</span>
-                        <span class="badge bg-light text-dark">HTML, CSS, Javascript, Tailwindcss</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="row align-items-center mb-5">
-                <!-- Image -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="work-image position-relative">
-                        <!-- Slider Container -->
-                        <div id="projectSlider" class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="assets/project/sos1.png" alt="Project 1 - Image 1" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/sos2.png" alt="Project 1 - Image 2" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/sos3.png" style="max-width: 40%; max-height: 40%;" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                            </div>
-                            
-                            <!-- Pagination dots -->
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Description -->
-                <div class="col-lg-6">
-                    <h5 class="fw-bold mb-2">Smart RT Panic Button (PBL)<a href="https://github.com/ranggali/Smart-RT-Panic-Button" target="_blank" rel="noopener noreferrer" style="color: #009688; text-decoration: none;">[DEMO]</a></h5>
-                    <p class="text-muted">
-                        Smart RT Panic Button is an IoT-based security system for local residents. If an emergency occurs, residents can press the SOS button on the app to turn on the loudspeakers in the area. The app has been used in several regions for residential security. Smart RT Panic Button is a new environmental security solution.
-                    </p>
-                    <div class="tags mb-3">
-                        <span class="badge bg-light text-dark">PHP Native, IoT, Firebase</span>
-                        <span class="badge bg-light text-dark">HTML, CSS, MySQL, Tailwindcss</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="row align-items-center mb-5">
-                <!-- Image -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="work-image position-relative">
-                        <!-- Slider Container -->
-                        <div id="projectSlider" class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="assets/project/alpu1.png" style="max-width: 25%; max-height: 25%;" alt="Project 1 - Image 1" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/alpu2.png" style="max-width: 25%; max-height: 25%;" alt="Project 1 - Image 2" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/alpu3.png" style="max-width: 25%; max-height: 25%;" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/alpu4.png" style="max-width: 25%; max-height: 25%;" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                            </div>
-                            
-                            <!-- Pagination dots -->
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Description -->
-                <div class="col-lg-6">
-                    <h5 class="fw-bold mb-2">Mobile Application Alpu (Akses Layanan Pasien Umum) (PBL)<a href="https://pbl.polibatam.ac.id/pamerin/detail.php?title=aplikasi-mobile-kesehatan&id=Nzgz&ta=Mw==&id_tim=MTQ2Mg==" target="_blank" rel="noopener noreferrer" style="color: #009688; text-decoration: none;">[DEMO]</a></h5>
-                    <p class="text-muted">
-                        The “ALPU” mobile application was developed to overcome the obstacles general patients face when accessing health services at the hospital. The manual registration process is often time-consuming and disruptive to patients' schedules. The main objective of the application is to provide general patients with easy access to and interaction with health services.
-                    </p>
-                    <div class="tags mb-3">
-                        <span class="badge bg-light text-dark">Flutter Dart</span>
-                        <span class="badge bg-light text-dark">MySQL, HTML, CSS, JavaScript</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="row align-items-center mb-5">
-                <!-- Image -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="work-image position-relative">
-                        <!-- Slider Container -->
-                        <div id="projectSlider" class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="assets/project/talenthub1.png" alt="Project 1 - Image 1" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/talenthub2.png" alt="Project 1 - Image 2" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/talenthub3.png" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/talenthub4.png" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                            </div>
-                            
-                            <!-- Pagination dots -->
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Description -->
-                <div class="col-lg-6">
-                    <h5 class="fw-bold mb-2">Talenthub.id Application (PBL)<a href="https://pbl.polibatam.ac.id/pamerin/detail.php?title=aplikasi-penjaringan-talent-pool&id=NTk2&ta=Mg==&id_tim=Mzg2" target="_blank" rel="noopener noreferrer" style="color: #009688; text-decoration: none;">[DEMO]</a></h5>
-                    <p class="text-muted">
-                        Talenthub showcases students' talents and qualifications in Polibatam, including internship opportunities. It connects Polibatam students with industry, meeting their needs.
-                    </p>
-                    <div class="tags mb-3">
-                        <span class="badge bg-light text-dark">PHP Native, MySQL</span>
-                        <span class="badge bg-light text-dark">HTML5, CSS, JavaScript, Bootstrap</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="row align-items-center mb-5">
-                <!-- Image -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="work-image position-relative">
-                        <!-- Slider Container -->
-                        <div id="projectSlider" class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="assets/project/loan1.jpeg" alt="Project 1 - Image 1" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/loan2.jpeg" alt="Project 1 - Image 2" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/loan3.jpeg" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/project/loan4.jpeg" alt="Project 1 - Image 3" class="img-fluid rounded shadow">
-                                </div>
-                            </div>
-                            
-                            <!-- Pagination dots -->
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Description -->
-                <div class="col-lg-6">
-                    <h5 class=" fw-bold mb-2">Room and Laboraroty Loan Application (PBL)<a href="https://github.com/ranggali/Aplikasi-Peminjaman-Ruangan-dan-Lab-Kampus" target="_blank" rel="noopener noreferrer" style="color: #009688; text-decoration: none;">[DEMO]</a></h5>
-                    <p class="text-muted">
-                        A website for borrowing rooms or laboratories for students and faculty at Politeknik Negeri 1 Batam. This platform connects users and administrators to process room loans.
-                    </p>
-                    <div class="tags mb-3">
-                        <span class="badge bg-light text-dark">PHP Native</span>
-                        <span class="badge bg-light text-dark">HTML5, CSS, BooStrap, JavaScript</span>
-                    </div>
-                </div>
-            </div>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/rangga-ali-ardyansyah/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/ranggali" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/ranggaalr_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+            </ul>
         </div>
-    </section>
-    <!-- EndWork -->
-
-    <!-- education start -->
-    <section id="education" class="education-section py-5">
-        <div class="container">
-            <div class="text-center mb-4">
-                <span class="badge bg-light text-muted mb-2">Education</span>
-                <h2 class="mt-2 fw-bold">Educational Background</h2>
-                <p class="text-muted">My academic journey in technology and software development</p>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <!-- Education Timeline -->
-                    <div class="education-timeline">
-                        <!-- Education Item 1 -->
-                        <div class="education-item d-flex mb-4">
-                            <div class="education-icon me-4">
-                                <div class="icon-circle bg-primary d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-mortarboard text-white fs-4"></i>
-                                </div>
-                            </div>
-                            <div class="education-content flex-grow-1">
-                                <div class="card border-0 shadow-sm">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start mb-2">
-                                            <h5 class="card-title fw-bold mb-1">Bachelor of Applied Science</h5>
-                                            <span class="badge bg-light text-muted">2022 - 2026</span>
-                                        </div>
-                                        <h6 class="text-primary mb-2">Politeknik Negeri 1 Batam</h6>
-                                        <p class="card-text text-muted mb-3">
-                                            Focused on software engineering, data structures, algorithms, and web development. 
-                                            Maintained excellent academic standing while working on various programming projects.
-                                        </p>
-                                        <div class="education-highlights">
-                                            <small class="text-muted">
-                                                <strong>Key Subjects:</strong> Data Structures, Algorithms, Web Development, Database Systems, Software Engineering, Object-Oriented Programming
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Education Item 2 -->
-                        <div class="education-item d-flex mb-4">
-                            <div class="education-icon me-4">
-                                <div class="icon-circle bg-success d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-book text-white fs-4"></i>
-                                </div>
-                            </div>
-                            <div class="education-content flex-grow-1">
-                                <div class="card border-0 shadow-sm">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start mb-2">
-                                            <h5 class="card-title fw-bold mb-1">High School Diploma</h5>
-                                            <span class="badge bg-light text-muted">2019 - 2022</span>
-                                        </div>
-                                        <h6 class="text-success mb-2">Madrasan Aliyah Negeri 1 Batam</h6>
-                                        <p class="card-text text-muted mb-3">
-                                            Science/Technology track with focus on mathematics and computer science. 
-                                            Started programming journey and developed passion for technology.
-                                        </p>
-                                        <div class="education-highlights">
-                                            <small class="text-muted">
-                                                <strong>Achievements:</strong> He was appointed class president for three periods and won the COC competition between classes. He memorized Juz 29 and 30 of the Quran.
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="shell footer-bottom">
+            Copyright © <span id="copyright-year">2026</span> Rangga Ali Ardyansyah. All rights reserved.
         </div>
-    </section>
-    <!-- End Education -->
+    </footer>
+    <!-- End Footer -->
 
-    <!-- StartFooter -->
-    <footer class="footer py-3 bg-light">
-        <div class="container text-center">
-            Copyright © <span id="copyright-year">2025</span> All rights reserved
-        </div>
-    </footer> 
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
     <!-- Bootstrap JavaScript -->
