@@ -1,0 +1,350 @@
+
+/* =========================================
+   SNAKE TIMELINE - WORK EXPERIENCE
+========================================= */
+
+#work .experience-flow {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 64px;
+    padding: 35px 0;
+}
+
+/* Four cards per row */
+#work .experience-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    position: relative;
+    align-items: stretch;
+}
+
+/* Alternate row direction */
+#work .experience-row:nth-child(even) {
+    direction: rtl;
+}
+
+/* Card */
+#work .experience-card {
+    direction: ltr;
+    position: relative;
+    min-width: 0;
+    min-height: 190px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 22px;
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--border, #dbe3ea);
+    border-radius: 16px;
+
+    transition: transform .25s ease,
+                border-color .25s ease,
+                box-shadow .25s ease;
+}
+
+#work .experience-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent, #0f766e);
+    box-shadow: 0 10px 28px rgba(0,0,0,.07);
+}
+
+#work .experience-number {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--accent, #0f766e);
+}
+
+#work .experience-card h3 {
+    margin: 0 0 10px;
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+#work .experience-company {
+    margin: 0 0 7px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#work .experience-period {
+    font-size: 12px;
+    color: var(--muted, #64748b);
+    line-height: 1.5;
+}
+
+/* Detail button */
+#work .detail-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    width: 100%;
+    margin-top: auto;
+    padding: 15px 0 0;
+
+    border: none;
+    border-top: 1px solid var(--border, #dbe3ea);
+    background: transparent;
+
+    color: var(--accent, #0f766e);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 650;
+    text-align: left;
+    cursor: pointer;
+}
+
+#work .detail-button:hover {
+    opacity: .7;
+}
+
+/* Horizontal connecting lines */
+#work .experience-card:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    width: 24px;
+    border-top: 1px solid var(--accent, #0f766e);
+}
+
+#work .experience-row:nth-child(even)
+.experience-card:not(:last-child)::after {
+    right: auto;
+    left: -25px;
+}
+
+/* Vertical connection between rows */
+#work .experience-row:nth-child(even)::after {
+    content: "";
+    position: absolute;
+    right: 12.5%;
+    bottom: -65px;
+    height: 65px;
+    border-left: 1px solid var(--accent, #0f766e);
+}
+
+/* =========================================
+   DETAIL MODAL
+========================================= */
+
+.experience-modal {
+    width: min(680px, calc(100% - 32px));
+    max-width: 680px;
+    max-height: min(85vh, 800px);
+
+    padding: 0;
+    margin: auto;
+
+    border: 1px solid var(--border, #dbe3ea);
+    border-radius: 20px;
+    background: var(--card-bg, #fff);
+    color: var(--text, #172033);
+
+    overflow: hidden;
+}
+
+.experience-modal[open] {
+    animation: modalEnter .25s ease;
+}
+
+.experience-modal::backdrop {
+    background: rgba(15, 23, 42, .65);
+    backdrop-filter: blur(5px);
+}
+
+@keyframes modalEnter {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    max-height: min(85vh, 800px);
+}
+
+/* Modal header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 28px;
+    border-bottom: 1px solid var(--border, #dbe3ea);
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--accent, #0f766e);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.modal-header h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.modal-header p {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.modal-close {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border, #dbe3ea);
+    border-radius: 50%;
+    background: transparent;
+    color: inherit;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background: var(--border, #dbe3ea);
+}
+
+/* Modal body */
+.modal-body {
+    padding: 26px 28px;
+    overflow-y: auto;
+    line-height: 1.75;
+}
+
+.modal-body h3 {
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.modal-body p {
+    margin: 0 0 24px;
+    color: var(--muted, #64748b);
+    font-size: 14px;
+}
+
+.modal-body ul {
+    padding-left: 20px;
+    margin: 0 0 26px;
+}
+
+.modal-body li {
+    margin-bottom: 12px;
+    padding-left: 4px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Technology tags */
+.modal-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.modal-skills span {
+    padding: 7px 11px;
+    border: 1px solid var(--border, #dbe3ea);
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+/* Modal footer */
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px 28px;
+    border-top: 1px solid var(--border, #dbe3ea);
+}
+
+.modal-footer span {
+    color: var(--muted, #64748b);
+    font-size: 12px;
+}
+
+.modal-footer button {
+    padding: 9px 16px;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent, #0f766e);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+    #work .experience-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        direction: ltr !important;
+        gap: 18px;
+    }
+
+    #work .experience-card::after,
+    #work .experience-row::after {
+        display: none;
+    }
+
+    #work .experience-flow {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    #work .experience-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    #work .experience-card {
+        min-height: 170px;
+        padding: 20px;
+    }
+
+    .experience-modal {
+        width: calc(100% - 20px);
+        max-height: 90vh;
+        border-radius: 16px;
+    }
+
+    .modal-header,
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-header h2 {
+        font-size: 20px;
+    }
+
+    .modal-footer {
+        padding: 14px 20px;
+    }
+}
